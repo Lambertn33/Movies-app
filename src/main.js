@@ -6,8 +6,6 @@ import { createRouter, createWebHistory } from 'vue-router';
 
 import HomeView from '@/components/home/HomeView.vue';
 
-import AboutView from '@/components/home/AboutView.vue';
-
 import MoviesList from '@/components/movies/MoviesList.vue';
 
 import MyFavourites from '@/components/movies/MyFavourites';
@@ -23,7 +21,6 @@ const router = createRouter({
   history: createWebHistory(),
   routes: [
     { path: '/', component: HomeView },
-    { path: '/about', component: AboutView },
     { path: '/movies', component: MoviesList },
     { path: '/favouriteMovies', component: MyFavourites }
   ]

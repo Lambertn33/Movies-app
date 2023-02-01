@@ -26,10 +26,6 @@
             href: '/'
           },
           {
-            name: 'About us',
-            href: '/about'
-          },
-          {
             name: 'Movies List',
             href: '/movies'
           },
