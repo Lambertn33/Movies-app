@@ -1,6 +1,9 @@
 <template>
   <div class="main">
     <the-navbar />
+    <div class="container">
+      <router-view />
+    </div>
   </div>
 </template>
 <script>
@@ -11,5 +14,7 @@
 
 .main {
   font-family: 'Poppins', sans-serif;
+  background-color: #d9d9d9;
+  height: 100vh;
 }
 </style>
