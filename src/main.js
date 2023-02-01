@@ -1,6 +1,6 @@
 import { createApp } from 'vue'
 import App from './App.vue'
-import TheNavbar from './components/TheNavbar/TheNavbar.vue'
+import TheNavbar from './components/nav/TheNavbar.vue'
 
 import "bootstrap/dist/css/bootstrap.min.css"
 

@@ -47,4 +47,10 @@
   .navbar-collapse {
     margin-left: 2.5rem;
   }
+
+  .nav-link:hover {
+    font-size: 1.125rem;
+    transition: .4s;
+    color: antiquewhite;
+  }
 </style>
