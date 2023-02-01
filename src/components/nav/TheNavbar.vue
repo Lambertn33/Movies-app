@@ -8,7 +8,7 @@
     <div class="collapse navbar-collapse" id="navbarNavDropdown">
       <ul class="navbar-nav">
         <li class="nav-item" v-for="link in urlLinks" :key="link.name">
-          <a class="nav-link active" aria-current="page" href="#">{{ link.name }}</a>
+          <router-link class="nav-link active" aria-current="page" :to="link.href">{{ link.name }}</router-link>
         </li>
       </ul>
     </div>
@@ -22,12 +22,20 @@
       return {
         urlLinks: [
           {
-            name: 'Movies List',
-            href: ''
+            name: 'Home',
+            href: '/'
           },
           {
-            name: 'My Favorites',
-            href: ''
+            name: 'About us',
+            href: '/about'
+          },
+          {
+            name: 'Movies List',
+            href: '/movies'
+          },
+          {
+            name: 'Favourites',
+            href: '/favouriteMovies'
           }
         ]
       }
@@ -49,8 +57,7 @@
   }
 
   .nav-link:hover {
-    font-size: 1.125rem;
     transition: .4s;
-    color: antiquewhite;
+    color:turquoise;
   }
 </style>
